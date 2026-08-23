@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+
+
+header {
+    margin: 40px;
+    padding: 30px;
+    background-color: #FFD6A5;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.profile-picture {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.profile-picture img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+}
+
+.profile-picture img:last-child {
+    opacity: 0;
+}
+
+.profile-picture:hover img:last-child {
+    opacity: 1;
+}
+
+.profile h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.profile p {
+    font-size: 20px;
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    background-color: #FFF0DC;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+
+nav a:hover {
+    background-color: white;
+    color: #D97706;
+}
+
+
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #FFF8F0;
+    border-radius: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+li {
+    margin: 10px 0;
+}
+
+
+
+.skill {
+    background-color: #FFE8CC;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.skill h3 {
+    margin-top: 0;
+}
+
+
+
+footer {
+    margin: 40px;
+    padding: 30px;
+    background-color: #FFD6A5;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+/* PHONE SCREEN */
+
+@media screen and (max-width: 600px) {
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile h1 {
+        font-size: 25px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+}
