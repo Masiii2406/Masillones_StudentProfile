@@ -39,20 +39,22 @@ Personal student profile page that shows my information, interests, skills, and 
 
 ## Project Structure
 
+```
 Masillones_StudentProfile/
 ├── www/
-│ ├── index.html # Main HTML file
-│ ├── style.css # CSS styles
-│ ├── profile.jpg # Profile photo
-│ └── profile-hover.jpg # Hover photo
-├── platforms/ # Cordova platforms
-│ └── android/
-├── screenshots/ # Screenshots for README
-│ ├── desktop.png
-│ ├── tablet.png
-│ └── mobile.png
-├── config.xml # Cordova configuration
-└── package.json # Node.js dependencies
+│   ├── index.html          # Main HTML file
+│   ├── style.css           # CSS styles
+│   ├── profile.jpg         # Profile photo
+│   └── profile-hover.jpg   # Hover photo
+├── platforms/              # Cordova platforms
+│   └── android/
+├── screenshots/            # Screenshots for README
+│   ├── desktop.png
+│   ├── tablet.png
+│   └── mobile.png
+├── config.xml              # Cordova configuration
+└── package.json            # Node.js dependencies
+```
 
 
 ## How to View
