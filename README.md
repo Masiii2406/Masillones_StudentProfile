@@ -1,32 +1,32 @@
-Masillones_StudentProfile
+# Masillones_StudentProfile
 
-Overview
+## Overview
 
 Personal student profile page that shows my information, interests, skills, and educational background. Fully responsive and works on desktop, tablet, and mobile devices.
 
-Project Info
+## Project Info
 
-- Course: ITCC 41 — Mobile Application Development
-- Activity: Module 3 — Student Profile Activity (Improved)
-- Student: Vince Martin R. Masillones
-- Tech Stack:** HTML5, CSS3, JavaScript, Cordova (Android platform)
+- **Course:** ITCC 41 — Mobile Application Development
+- **Activity:** Module 3 — Student Profile Activity (Improved)
+- **Student:** Vince Martin R. Masillones
+- **Tech Stack:** HTML5, CSS3, JavaScript, Cordova (Android platform)
 
-Features
+## Features
 
-- Responsive design (Desktop, Tablet, Mobile)
-- Profile picture with hover effect
-- Smooth scrolling navigation
-- "Back to Top" button
-- Accessible design with ARIA labels
-- Clean and minimal design
+- ✅ Responsive design (Desktop, Tablet, Mobile)
+- ✅ Profile picture with hover effect
+- ✅ Smooth scrolling navigation
+- ✅ "Back to Top" button
+- ✅ Accessible design with ARIA labels
+- ✅ Clean and minimal design
 
-Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3 (Flexbox, Grid, Media Queries)
 - JavaScript
 
-Screenshots
+## Screenshots
 
 ### Desktop View
 ![Desktop Screenshot](screenshots/desktop.png)
@@ -37,7 +37,9 @@ Screenshots
 ### Mobile View
 ![Mobile Screenshot](screenshots/mobile.png)
 
-Project Structure
+## Project Structure
+
+Masillones_StudentProfile/
 ├── www/
 │ ├── index.html # Main HTML file
 │ ├── style.css # CSS styles
@@ -53,13 +55,13 @@ Project Structure
 └── package.json # Node.js dependencies
 
 
-## 🚀 How to View
+## How to View
 
 1. Clone the repository
-2. Open `index.html` in your browser
-3. Or visit the live demo: [Your GitHub Pages URL]
+2. Open `www/index.html` in your browser
+3. Or use Cordova: `cordova run browser`
 
-## 📝 What I Learned
+## What I Learned
 
 - Creating responsive layouts with media queries
 - Implementing accessibility features
@@ -67,13 +69,13 @@ Project Structure
 - Working with CSS transitions and hover effects
 - Adding smooth scrolling with JavaScript
 
-## 📅 Activity Details
+## Activity Details
 
-**Course:** ITCC 41 - Mobile Application Development  
-**Module:** Module 3 - Student Profile Activity  
-**Deadline:** September 2, 11:59 PM
+- **Course:** ITCC 41 - Mobile Application Development
+- **Module:** Module 3 - Student Profile Activity
+- **Deadline:** September 2, 2026, 11:59 PM
 
-## 📄 License
+## License
 
 This project is for educational purposes only.
 
