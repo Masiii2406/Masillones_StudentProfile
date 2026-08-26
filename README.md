@@ -1,44 +1,82 @@
-# Masillones_StudentProfile
+Masillones_StudentProfile
 
-A basic Student Profile page built with **HTML and CSS only**, bundled and compiled with **Apache Cordova**, and run on an Android emulator.
+Overview
 
-## Project Info
+Personal student profile page that shows my information, interests, skills, and educational background. Fully responsive and works on desktop, tablet, and mobile devices.
 
-- **Course:** ITCC 41
-- **Activity:** Activity 2 — Basic Student Profile
-- **Student:** Vince Martin R. Masillones
-- **Tech Stack:** HTML, CSS, Cordova (Android platform)
+Project Info
 
-## Features
+- Course: ITCC 41 — Mobile Application Development
+- Activity: Module 3 — Student Profile Activity (Improved)
+- Student: Vince Martin R. Masillones
+- Tech Stack:** HTML5, CSS3, JavaScript, Cordova (Android platform)
 
-- Student profile card with photo, name, and quick-access buttons (About, Skills)
-- CSS-based interaction (image hover swap on profile photo)
-- Packaged as a Cordova Android app and tested on an Android emulator
+Features
 
-## Screenshots
+- Responsive design (Desktop, Tablet, Mobile)
+- Profile picture with hover effect
+- Smooth scrolling navigation
+- "Back to Top" button
+- Accessible design with ARIA labels
+- Clean and minimal design
 
-![App running on Android emulator](screenshots/app-screenshot.png)
+Technologies Used
 
-## Project Structure
+- HTML5
+- CSS3 (Flexbox, Grid, Media Queries)
+- JavaScript
 
-```
-Masillones_StudentProfile/
+Screenshots
+
+### Desktop View
+![Desktop Screenshot](screenshots/desktop.png)
+
+### Tablet View
+![Tablet Screenshot](screenshots/tablet.png)
+
+### Mobile View
+![Mobile Screenshot](screenshots/mobile.png)
+
+Project Structure
 ├── www/
-│   ├── index.html
-│   ├── style.css
-│   ├── profile.jpg
-│   └── profile-hover.jpg
-├── platforms/
-│   └── android/
-├── screenshots/
-│   └── app-screenshot.png
-├── config.xml
-└── package.json
-```
+│ ├── index.html # Main HTML file
+│ ├── style.css # CSS styles
+│ ├── profile.jpg # Profile photo
+│ └── profile-hover.jpg # Hover photo
+├── platforms/ # Cordova platforms
+│ └── android/
+├── screenshots/ # Screenshots for README
+│ ├── desktop.png
+│ ├── tablet.png
+│ └── mobile.png
+├── config.xml # Cordova configuration
+└── package.json # Node.js dependencies
 
-## Running the Project
 
-1. Install [Node.js](https://nodejs.org/) and Cordova CLI (`npm install -g cordova`)
-2. Clone this repo
-3. Run `cordova platform add android`
-4. Run `cordova run android` (with an emulator running or a device connected)
+## 🚀 How to View
+
+1. Clone the repository
+2. Open `index.html` in your browser
+3. Or visit the live demo: [Your GitHub Pages URL]
+
+## 📝 What I Learned
+
+- Creating responsive layouts with media queries
+- Implementing accessibility features
+- Using semantic HTML elements
+- Working with CSS transitions and hover effects
+- Adding smooth scrolling with JavaScript
+
+## 📅 Activity Details
+
+**Course:** ITCC 41 - Mobile Application Development  
+**Module:** Module 3 - Student Profile Activity  
+**Deadline:** September 2, 11:59 PM
+
+## 📄 License
+
+This project is for educational purposes only.
+
+---
+
+Created by Vince Martin R. Masillones
