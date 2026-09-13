@@ -83,28 +83,31 @@ cordova run android
 ![Cordova About](screenshots/cordova-about.png)
 
 ## Project Structure
+
+```
 Masillones_StudentProfile/
-	├── www/
-	│ ├── index.html # Profile (Homepage)
-	│ ├── about.html # About page
-	│ ├── skills.html # Skills page
-	│ ├── projects.html # Projects page
-	│ ├── contact.html # Contact page
-	│ ├── style.css # Shared CSS
-	│ ├── profile.jpg
-	│ └── profile-hover.jpg
-	├── platforms/
-	│ └── android/
-	├── screenshots/
-	│ ├── profile.png
-	│ ├── about.png
-	│ ├── skills.png
-	│ ├── projects.png
-	│ ├── contact.png
-	│ ├── responsive-mobile.png
-	│ └── responsive-tablet.png
-	├── config.xml
-	└── package.json
+├── www/
+│   ├── index.html
+│   ├── about.html
+│   ├── skills.html
+│   ├── projects.html
+│   ├── contact.html
+│   ├── style.css
+│   ├── profile.jpg
+│   └── profile-hover.jpg
+├── platforms/
+│   └── android/
+├── screenshots/
+│   ├── profile.png
+│   ├── about.png
+│   ├── skills.png
+│   ├── projects.png
+│   ├── contact.png
+│   ├── responsive-mobile.png
+│   └── responsive-tablet.png
+├── config.xml
+└── package.json
+```
 
 ## Activity Details
 
