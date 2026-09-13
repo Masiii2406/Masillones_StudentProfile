@@ -1,81 +1,108 @@
 # Masillones_StudentProfile
 
-## Overview
+A responsive **multi-page** Student Profile application built with HTML5, CSS3, and Apache Cordova.
 
-Personal student profile page that shows my information, interests, skills, and educational background. Fully responsive and works on desktop, tablet, and mobile devices.
+## Project Description
 
-## Project Info
+This application expands the single-page Student Profile from Activity 3 into a full multi-page application. It has five pages, each with its own purpose and content, connected by a consistent navigation menu.
 
-- **Course:** ITCC 41 — Mobile Application Development
-- **Activity:** Module 3 — Student Profile Activity (Improved)
-- **Student:** Vince Martin R. Masillones
-- **Tech Stack:** HTML5, CSS3, JavaScript, Cordova (Android platform)
+## Application Pages
 
-## Features
+| Page | File | Purpose |
+|------|------|---------|
+| **Profile** | `index.html` | Homepage with profile picture, name, tagline, brief intro, and live GitHub contribution graph |
+| **About** | `about.html` | Personal intro, interests, educational background, and goals |
+| **Skills** | `skills.html` | 8 skills organized by category with descriptions |
+| **Projects** | `projects.html` | 3 projects with title, description, role, and technologies used |
+| **Contact** | `contact.html` | Email, GitHub, LinkedIn, location, and contact form layout |
 
-- ✅ Responsive design (Desktop, Tablet, Mobile)
-- ✅ Profile picture with hover effect
-- ✅ Smooth scrolling navigation
-- ✅ "Back to Top" button
-- ✅ Accessible design with ARIA labels
-- ✅ Clean and minimal design
+## Navigation
 
-## Technologies Used
+Navigation is implemented using **standard HTML links** — no JavaScript. Each page has the same navigation menu at the top with links to all five pages. The current page is highlighted with an underline.
 
-- HTML5
-- CSS3 (Flexbox, Grid, Media Queries)
-- JavaScript
+Users can always return to the Profile homepage by clicking "Profile" in the navigation.
 
-## Screenshots
+## Responsive Design
 
-### Desktop View
-![Desktop Screenshot](screenshots/desktop.png)
+All five pages remain fully responsive using media queries:
 
-### Tablet View
-![Tablet Screenshot](screenshots/tablet.png)
+- **Desktop (1200px+)**: Full layout, horizontal navigation
+- **Tablet (768px)**: Centered content, adjusted spacing
+- **Mobile (390px)**: Stacked layout, larger touch targets, single-column grids
 
-### Mobile View
-![Mobile Screenshot](screenshots/mobile.png)
+## UI/UX Principles Applied
+
+- **Consistency**: Same color palette, typography, navigation, and layout on every page
+- **Visual Hierarchy**: Page titles, section headings, and body text are clearly distinguished
+- **Usability**: Current page is highlighted; every page has a clear title and purpose
+- **Readability**: Font sizes and line heights optimized for all screen sizes
+- **Accessibility**: ARIA labels on navigation, meaningful alt text, focus states on links
+
+## How to Run
+
+### Option 1: In Browser
+1. Navigate to the `www` folder
+2. Open `index.html` in your browser
+
+### Option 2: With Cordova
+
+npm install -g cordova
+cordova platform add android
+cordova run android
+
+## Application Screenshots
+
+### Profile (Homepage)
+![Profile](screenshots/profile.png)
+
+### About
+![About](screenshots/about.png)
+
+### Skills
+![Skills](screenshots/skills.png)
+
+### Projects
+![Projects](screenshots/projects.png)
+
+### Contact
+![Contact](screenshots/contact.png)
+
+### Responsive Design Proof
+
+**Mobile (390px)**
+![Mobile](screenshots/responsive-mobile.png)
+
+**Tablet (768px)**
+![Tablet](screenshots/responsive-tablet.png)
 
 ## Project Structure
-
-```
-Masillones_StudentProfile/
 ├── www/
-│   ├── index.html          # Main HTML file
-│   ├── style.css           # CSS styles
-│   ├── profile.jpg         # Profile photo
-│   └── profile-hover.jpg   # Hover photo
-├── platforms/              # Cordova platforms
-│   └── android/
-├── screenshots/            # Screenshots for README
-│   ├── desktop.png
-│   ├── tablet.png
-│   └── mobile.png
-├── config.xml              # Cordova configuration
-└── package.json            # Node.js dependencies
-```
-
-
-## How to View
-
-1. Clone the repository
-2. Open `www/index.html` in your browser
-3. Or use Cordova: `cordova run browser`
-
-## What I Learned
-
-- Creating responsive layouts with media queries
-- Implementing accessibility features
-- Using semantic HTML elements
-- Working with CSS transitions and hover effects
-- Adding smooth scrolling with JavaScript
+│ ├── index.html # Profile (Homepage)
+│ ├── about.html # About page
+│ ├── skills.html # Skills page
+│ ├── projects.html # Projects page
+│ ├── contact.html # Contact page
+│ ├── style.css # Shared CSS
+│ ├── profile.jpg
+│ └── profile-hover.jpg
+├── platforms/
+│ └── android/
+├── screenshots/
+│ ├── profile.png
+│ ├── about.png
+│ ├── skills.png
+│ ├── projects.png
+│ ├── contact.png
+│ ├── responsive-mobile.png
+│ └── responsive-tablet.png
+├── config.xml
+└── package.json
 
 ## Activity Details
 
-- **Course:** ITCC 41 - Mobile Application Development
-- **Module:** Module 3 - Student Profile Activity
-- **Deadline:** September 2, 2026, 11:59 PM
+- **Course:** ITCC 41 — Mobile Application Development
+- **Activity:** Module 4 — Multi-Page Student Profile
+- **Student:** Vince Martin R. Masillones
 
 ## License
 
