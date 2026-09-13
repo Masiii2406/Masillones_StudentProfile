@@ -10,7 +10,7 @@ This application expands the single-page Student Profile from Activity 3 into a 
 
 | Page | File | Purpose |
 |------|------|---------|
-| **Profile** | `index.html` | Homepage with profile picture, name, tagline, brief intro, and live GitHub contribution graph |
+| **Profile** | `index.html` | Homepage with profile picture, name, tagline, and brief intro |
 | **About** | `about.html` | Personal intro, interests, educational background, and goals |
 | **Skills** | `skills.html` | 8 skills organized by category with descriptions |
 | **Projects** | `projects.html` | 3 projects with title, description, role, and technologies used |
@@ -45,7 +45,6 @@ All five pages remain fully responsive using media queries:
 2. Open `index.html` in your browser
 
 ### Option 2: With Cordova
-
 npm install -g cordova
 cordova platform add android
 cordova run android
@@ -75,28 +74,37 @@ cordova run android
 **Tablet (768px)**
 ![Tablet](screenshots/responsive-tablet.png)
 
+### Cordova Android Emulator
+
+**Profile (running in emulator)**
+![Cordova Profile](screenshots/cordova-profile.png)
+
+**About (running in emulator)**
+![Cordova About](screenshots/cordova-about.png)
+
 ## Project Structure
-├── www/
-│ ├── index.html # Profile (Homepage)
-│ ├── about.html # About page
-│ ├── skills.html # Skills page
-│ ├── projects.html # Projects page
-│ ├── contact.html # Contact page
-│ ├── style.css # Shared CSS
-│ ├── profile.jpg
-│ └── profile-hover.jpg
-├── platforms/
-│ └── android/
-├── screenshots/
-│ ├── profile.png
-│ ├── about.png
-│ ├── skills.png
-│ ├── projects.png
-│ ├── contact.png
-│ ├── responsive-mobile.png
-│ └── responsive-tablet.png
-├── config.xml
-└── package.json
+Masillones_StudentProfile/
+	├── www/
+	│ ├── index.html # Profile (Homepage)
+	│ ├── about.html # About page
+	│ ├── skills.html # Skills page
+	│ ├── projects.html # Projects page
+	│ ├── contact.html # Contact page
+	│ ├── style.css # Shared CSS
+	│ ├── profile.jpg
+	│ └── profile-hover.jpg
+	├── platforms/
+	│ └── android/
+	├── screenshots/
+	│ ├── profile.png
+	│ ├── about.png
+	│ ├── skills.png
+	│ ├── projects.png
+	│ ├── contact.png
+	│ ├── responsive-mobile.png
+	│ └── responsive-tablet.png
+	├── config.xml
+	└── package.json
 
 ## Activity Details
 
