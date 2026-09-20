@@ -20,35 +20,85 @@
 
         <main class="card">
 
-            <div class="header-row">
-                <div class="avatar">
-                    <img src="profile.jpg" alt="Vince Masillones profile photo" />
-                    <img src="profile-hover.jpg" alt="Vince Masillones smiling" />
+            <div id="profile-view">
+
+                <div class="header-row">
+                    <div class="avatar">
+                        <img src="profile.jpg" alt="Vince Masillones profile photo" />
+                        <img src="profile-hover.jpg" alt="Vince Masillones smiling" />
+                    </div>
+                    <div class="title-group">
+                        <h1 id="display-name">Vince Masillones</h1>
+                        <p class="tagline" id="display-course">BS Information Technology</p>
+                        <p class="tagline" id="display-year">3rd Year</p>
+                    </div>
                 </div>
-                <div class="title-group">
-                    <h1>Vince Masillones</h1>
-                    <p class="tagline">Freelance Web Developer (Puhon)</p>
+
+                <section>
+                    <h2>About Me</h2>
+                    <p id="display-about">
+                        Hello! My name is Vince Martin R. Masillones. I am a 3rd Year
+                        BSIT College Student interested in learning new things.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>My Skills</h2>
+                    <ul id="display-skills">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </section>
+
+                <div class="profile-actions">
+                    <button id="edit-btn" class="edit-btn">✏️ Edit Profile</button>
                 </div>
+
             </div>
 
-            <section>
-                <h2>Konnichiwassap</h2>
-                <p>
-                    Welcome to my student profile application. I'm a 3rd Year BSIT
-                    student at Xavier University Ateneo de Cagayan, passionate about
-                    technology, cybersecurity, networking, and web development.
-                </p>
-            </section>
+            <div id="edit-view" style="display: none;">
 
-                        
-            <section>
-                <iframe 
-                    src="https://jandi.firejune.io/Masiii2406?scheme=light&footer=false"
-                    class="github-graph"
-                    title="Vince Masillones GitHub contribution graph"
-                     loading="lazy"
-            ></iframe>
-            </section>
+                <h1 class="page-title">Edit Profile</h1>
+
+                <!-- Error message area -->
+                <div id="form-errors" class="form-errors" role="alert"></div>
+
+                <form id="edit-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="input-name">Full Name *</label>
+                        <input type="text" id="input-name" placeholder="Enter your full name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-course">Course *</label>
+                        <input type="text" id="input-course" placeholder="e.g. BS Information Technology" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-year">Year Level *</label>
+                        <input type="text" id="input-year" placeholder="e.g. 3rd Year" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-about">About Me *</label>
+                        <textarea id="input-about" placeholder="Tell us about yourself"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-skills">Skills (one per line) *</label>
+                        <textarea id="input-skills" placeholder="HTML&#10;CSS&#10;JavaScript"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="save-btn">Save</button>
+                        <button type="button" id="cancel-btn" class="cancel-btn">Cancel</button>
+                    </div>
+
+                </form>
+
+            </div>
 
             <footer>
                 <p>© 2026 Vince Martin R. Masillones</p>
@@ -57,6 +107,9 @@
         </main>
 
     </div>
+
+    <!-- Load the JavaScript -->
+    <script src="app.js"></script>
 
 </body>
 </html>

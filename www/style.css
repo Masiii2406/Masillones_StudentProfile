@@ -530,3 +530,101 @@ footer p {
         display: block;
         margin: 12px 0;
 }
+
+.profile-actions {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(200, 150, 110, 0.2);
+    text-align: center;
+}
+
+.edit-btn {
+    padding: 12px 28px;
+    background: #b45f2b;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    min-height: 44px;
+}
+
+.edit-btn:hover {
+    background: #9a4f23;
+}
+
+.edit-btn:focus-visible {
+    outline: 3px solid #b45f2b;
+    outline-offset: 3px;
+}
+
+.form-errors {
+    display: none;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    background: #ffe5e5;
+    border-left: 4px solid #cc0000;
+    color: #cc0000;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-errors:not(:empty) {
+    display: block;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    min-height: 44px;
+}
+
+.save-btn {
+    background: #b45f2b;
+    color: #ffffff;
+}
+
+.save-btn:hover {
+    background: #9a4f23;
+}
+
+.cancel-btn {
+    background: #e5e5e5;
+    color: #2d1b0e;
+}
+
+.cancel-btn:hover {
+    background: #d4d4d4;
+}
+
+.save-btn:focus-visible,
+.cancel-btn:focus-visible {
+    outline: 3px solid #b45f2b;
+    outline-offset: 3px;
+}
+
+/* Mobile: full-width buttons */
+@media screen and (max-width: 480px) {
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .save-btn,
+    .cancel-btn,
+    .edit-btn {
+        width: 100%;
+    }
+}
