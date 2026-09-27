@@ -36,6 +36,39 @@ The Profile page has an **Edit Profile** button. When clicked, an edit form appe
 
 Users can modify any of these fields and click **Save** to update the profile, or **Cancel** to discard changes.
 
+## Camera Integration
+
+The Profile page has a **Change Profile Picture** button, and the profile picture is tappable. Either action opens the device camera via Cordova's `cordova-plugin-camera`.
+
+### Process
+
+```
+Tap Picture / "Change Profile Picture"
+        ↓
+Camera Opens (Cordova Camera Plugin)
+        ↓
+User Captures Photo
+        ↓
+Profile Picture Updates + Saved to localStorage
+```
+
+### Cordova Plugin
+
+- **Plugin:** `cordova-plugin-camera`
+- **Why:** Cordova bridges JavaScript to native Android features. Browsers cannot directly access the device camera.
+- **After capture:** The plugin returns the image, which is set as the `<img>` `src` and saved to `localStorage`.
+
+### Error & Cancellation Handling
+
+- **Cancellation:** If the user backs out, the existing picture stays.
+- **Permission denied:** A red message appears: *"Unable to access the camera. Please check your device permissions."*
+
+### Activity 6 Screenshots
+
+![Profile](screenshots/activity6-profile.png)
+![Camera](screenshots/activity6-camera.png)
+![Error](screenshots/activity6-error.png)
+
 ## JavaScript Functionality
 
 JavaScript is used for:

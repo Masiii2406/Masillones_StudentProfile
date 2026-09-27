@@ -23,16 +23,26 @@
             <div id="profile-view">
 
                 <div class="header-row">
-                    <div class="avatar">
-                        <img src="profile.jpg" alt="Vince Masillones profile photo" />
-                        <img src="profile-hover.jpg" alt="Vince Masillones smiling" />
-                    </div>
+                    <!-- Clickable avatar -->
+                    <button
+                        type="button"
+                        class="avatar avatar-btn"
+                        id="avatar-btn"
+                        aria-label="Tap to change profile picture"
+                        title="Tap to change profile picture"
+                    >
+                        <img id="profile-pic" src="profile.jpg" alt="Vince Masillones profile photo" />
+                        <img id="profile-pic-hover" src="profile-hover.jpg" alt="Vince Masillones smiling" />
+                    </button>
+
                     <div class="title-group">
                         <h1 id="display-name">Vince Masillones</h1>
                         <p class="tagline" id="display-course">BS Information Technology</p>
                         <p class="tagline" id="display-year">3rd Year</p>
                     </div>
                 </div>
+
+                <div id="camera-message" class="camera-message" role="alert"></div>
 
                 <section>
                     <h2>About Me</h2>
@@ -52,6 +62,7 @@
                 </section>
 
                 <div class="profile-actions">
+                    <button id="change-pic-btn" class="edit-btn secondary">📷 Change Profile Picture</button>
                     <button id="edit-btn" class="edit-btn">✏️ Edit Profile</button>
                 </div>
 
@@ -61,7 +72,6 @@
 
                 <h1 class="page-title">Edit Profile</h1>
 
-                <!-- Error message area -->
                 <div id="form-errors" class="form-errors" role="alert"></div>
 
                 <form id="edit-form" novalidate>
@@ -108,7 +118,7 @@
 
     </div>
 
-    <!-- Load the JavaScript -->
+    <script src="cordova.js"></script>
     <script src="app.js"></script>
 
 </body>
